@@ -1,9 +1,16 @@
+binary-ghc-args:
+- -O
+- -threaded
 module-template: ! 'module MODULE_NAME where
 
 '
 extensions: {}
-environment: default
+environment: ghc-7.8-stable-14.09
+auto-hidden: []
 cabal-file: project.cabal
 version: 1
+extra-packages: ! 'Hackage: pipes-group 1.0.2
+
+  Hackage: pipes-bytestring 2.1.1'
 ghc-args: []
 excluded-modules: []
